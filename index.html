@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JasaConnect — Partner Anda dalam Mewujudkan Ide</title>
+  <meta name="description" content="JasaConnect — temukan & tawarkan jasa terpercaya. Partner Anda untuk menghubungkan ide dengan ahlinya.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Link ke file CSS terpisah -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- floating button (main site) -->
+  <a class="float-btn" href="https://your-jasaconnect-main-site.example" id="floatLink" target="_blank" rel="noopener">
+    🔗 Kunjungi Website Utama
+  </a>
+
+  <!-- header -->
+  <header>
+    <div class="nav-inner">
+      <div class="brand">
+  <div class="logo" aria-hidden="true">
+    <img src="LogoJasaConnect.svg" alt="Logo JasaConnect" style="width:40px;height:40px;border-radius:10px;">
+  </div>
+  <div>
+    <div style="font-weight:800">JasaConnect</div>
+    <div style="font-size:12px;color:var(--muted)">Partner dalam mewujudkan ide</div>
+  </div>
+</div>
+
+
+      <nav aria-label="Main navigation">
+        <a href="#why">Kenapa</a>
+        <a href="#how">Cara Kerja</a>
+        <a href="#works">Proyek</a>
+        <a href="#faq">FAQ</a>
+
+        <!-- Theme toggle -->
+        <span class="toggle" title="Ganti tema (Light/Dark)">
+          <button id="lightBtn" class="active" aria-label="Light mode">Light</button>
+          <button id="darkBtn" aria-label="Dark mode">Dark</button>
+        </span>
+
+        <a class="cta-btn btn-primary" id="ctaJoin" href="#join">Gabung Sekarang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker reveal">Solusi jasa yang bisa diandalkan</div>
+          <h1 id="hero-title" class="reveal">Karena setiap ide butuh tangan yang tepat.</h1>
+          <p class="lead reveal">Perlu meja custom, service AC, atau logo untuk bisnismu? Kadang yang kita butuhkan bukan hanya penyedia — tapi partner yang memahami detail. JasaConnect menghubungkan ide dan keahlian secara cepat, aman, dan terpercaya.</p>
+
+          <div class="actions reveal">
+            <a class="btn-primary" href="#how">Cari Jasa Sekarang</a>
+            <a class="btn-ghost" href="#join">Jual Jasa Kamu</a>
+          </div>
+
+          <div class="hero-note reveal" style="margin-top:18px">
+            Relatable: "Saya punya gambar kasar meja, tapi bingung bahan & ukuran." — Ceritakan saja; penyedia akan bantu merealisasikannya.
+          </div>
+        </div>
+
+        <div class="hero-visual reveal hero-parallax" aria-hidden="true">
+          <div class="device" role="img" aria-label="device mockup">
+            <div class="bar" style="width:88%"></div>
+            <div class="bar" style="width:70%"></div>
+            <div class="bar" style="width:56%"></div>
+            <div style="flex:1"></div>
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent))"></div>
+              <div style="flex:1"><div style="height:10px;background:white;border-radius:8px;margin-bottom:8px"></div><div style="height:8px;width:40%;background:white;border-radius:8px;opacity:.95"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buyer / Seller -->
+    <section>
+      <div class="container split">
+        <div>
+          <div class="pitch">
+            <div class="card reveal">
+              <h3>Untuk Pencari Jasa — Dari Ide jadi Kenyataan</h3>
+              <p class="muted">Kamu punya ide — misal meja custom untuk sudut ruang tamu — tapi tidak tahu siapa yang bisa merealisasikannya. Di JasaConnect, ceritakan kebutuhanmu, dapatkan penawaran, dan pilih penyedia yang paling cocok.</p>
+              <p class="muted mb-10"><strong>Relatable:</strong> "Saya cuma punya gambar kasar; tidak paham material & ukuran" — penyedia akan bantu detailkan sampai jadi.</p>
+              <a class="btn-primary" href="#how">Mulai Cari</a>
+            </div>
+
+            <div class="card reveal">
+              <h3>Untuk Penyedia Jasa — Ubah Keahlian jadi Peluang</h3>
+              <p class="muted">Punya keterampilan tapi kesulitan dapat klien? Buat profil, tampilkan portofolio, dan terima permintaan dari pengguna yang butuh jasamu. Kelola pesanan dan bangun reputasi.</p>
+              <p class="muted mb-10"><strong>Relatable:</strong> "Saya mahir bikin meja, tapi bingung promosi." — Fokus kerja; JasaConnect perluas jangkauan.</p>
+              <a class="btn-ghost" href="#join">Jual Jasa</a>
+            </div>
+          </div>
+
+          <div style="margin-top:22px" class="reveal">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent))"></div>
+              <div>
+                <div style="font-weight:700">Bersama, kita selesaikan masalah nyata</div>
+                <div style="color:var(--muted);font-size:13px">Kami membantu menghubungkan orang yang punya kebutuhan dengan para profesional yang siap membantu.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card reveal">
+          <h4 style="margin-top:0">Sorotan</h4>
+          <div style="margin-top:12px;color:var(--muted)">Beberapa alasan kenapa pengguna & penyedia menyukai JasaConnect:</div>
+
+          <div class="features" style="margin-top:14px">
+            <div class="feature">
+              <h4>⚡ Cepat</h4><p>Cari & pesan jasa hanya dalam hitungan menit.</p>
+            </div>
+            <div class="feature">
+              <h4>🔒 Aman</h4><p>Penyedia diverifikasi & transaksi dicatat.</p>
+            </div>
+            <div class="feature">
+              <h4>🌟 Terpercaya</h4><p>Ulasan jujur membantu kamu memilih yang tepat.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:18px">
+            <h4>Status Saat Ini</h4>
+            <div class="stats" style="margin-top:12px">
+              <div class="stat">
+                <h3>Belum Ada Angka</h3>
+                <p>Kami sedang membangun fondasi JasaConnect bersama para penyedia jasa pertama kami.</p>
+              </div>
+              <div class="stat">
+                <h3>No Fake Reviews</h3>
+                <p>Belum ada rating? Belum — tapi yang nanti muncul semuanya asli dari pengguna nyata.</p>
+              </div>
+              <div class="stat">
+                <h3>Masih Baru, Masih Semangat</h3>
+                <p>Kami percaya setiap langkah kecil membawa perubahan besar. Yuk jadi bagian awalnya!</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Works / portfolio -->
+    <section id="works">
+      <div class="container">
+        <h2 class="reveal">Contoh Proyek & Hasil Kerja</h2>
+        <div class="works reveal" style="margin-top:12px">
+
+  <div class="work">
+    <div class="thumb" style="height:180px;overflow:hidden;">
+      <img src="ContohPembuatanMEJA.jpg" alt="Proyek Meja Custom" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div class="meta">
+      <strong>Meja Kayu Custom</strong>
+      <div class="muted">Penyedia: Budi Carpentry</div>
+    </div>
+  </div>
+
+  <div class="work">
+    <div class="thumb" style="height:180px;overflow:hidden;">
+      <img src="ContohAC.png" alt="Service AC" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div class="meta">
+      <strong>Service AC + Cuci</strong>
+      <div class="muted">Penyedia: CoolFix</div>
+    </div>
+  </div>
+
+  <div class="work">
+    <div class="thumb" style="height:180px;overflow:hidden;">
+      <img src="ContohPembuatanLogo.jpg" alt="Desain Logo Startup" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div class="meta">
+      <strong>Branding Startup Lokal</strong>
+      <div class="muted">Penyedia: KreatifStudio</div>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (placeholder invite) -->
+    <section>
+      <div class="container">
+        <h2 class="reveal">Apa Kata Pengguna</h2>
+        <div class="testimonials reveal">
+          <div class="testimonial">
+            <strong>Belum Ada Testimoni</strong>
+            <p class="muted">Kosong? Iya. Menarik? Iya juga. Jadilah orang pertama yang menulis pengalaman dari JasaConnect!</p>
+          </div>
+          <div class="testimonial">
+            <strong>Jadi Pengguna Pertama</strong>
+            <p class="muted">Bergabung sejak awal — dapat cerita menarik & kesempatan jadi referensi bagi pengguna lain.</p>
+          </div>
+          <div class="testimonial">
+            <strong>Penyedia Baru Dipersilakan</strong>
+            <p class="muted">Daftar sekarang dan buat portofolio nyata di JasaConnect — tanpa tipu-tipu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section>
+      <div class="container">
+        <h2 class="reveal">Kenapa Memilih JasaConnect, Bukan Sekadar Instagram atau Aplikasi Lain?</h2>
+        <p class="muted reveal">Instagram atau grup WhatsApp bagus untuk promosi — tapi untuk mencari & memesan jasa secara aman, terstruktur, dan terpercaya, JasaConnect punya keunggulan khusus:</p>
+
+        <div class="why-list reveal">
+          <div class="why-item">
+            <h4>1. Terstruktur & Mudah Dilacak</h4>
+            <p>Menggunakan JasaConnect artinya transaksi dan percakapan tersimpan rapi — tidak hilang di DM atau komentar. Invoice, jadwal, dan bukti kerja tersedia ketika diperlukan.</p>
+          </div>
+          <div class="why-item">
+            <h4>2. Verifikasi Penyedia</h4>
+            <p>Kami verifikasi penyedia sehingga kamu mengurangi risiko ketidaksesuaian. Di medsos, siapa pun bisa posting — di sini ada standar minimal.</p>
+          </div>
+          <div class="why-item">
+            <h4>3. Sistem Ulasan Nyata</h4>
+            <p>Ulasan di JasaConnect muncul dari proses transaksi; bukan sekadar testimoni di feed. Ini membantu calon pelanggan memilih lebih bijak.</p>
+          </div>
+          <div class="why-item">
+            <h4>4. Perlindungan Transaksi</h4>
+            <p>Fitur pembayaran dan invoice membantu memastikan komitmen antara pengguna dan penyedia — berbeda dengan chat yang mudah terlupakan.</p>
+          </div>
+          <div class="why-item">
+            <h4>5. Fokus pada Jasa — Bukan Feed</h4>
+            <p>Di medsos, konten sering bersaing dengan banyak hal. JasaConnect fokus pada koneksi jasa — cepat menemukan apa yang kamu butuhkan.</p>
+          </div>
+          <div class="why-item">
+            <h4>6. Peluang untuk Penyedia</h4>
+            <p>Penyedia dapat membangun portofolio nyata, menerima permintaan langsung, dan mengelola pesanan tanpa harus promosi konstan di medsos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features extended -->
+    <section>
+      <div class="container">
+        <h2 class="reveal">Fitur Utama</h2>
+        <div class="features reveal" style="margin-top:12px">
+          <div class="feature"><h4>Profil Penyedia Lengkap</h4><p>Menampilkan portofolio, rating, dan verifikasi identitas.</p></div>
+          <div class="feature"><h4>Chat & Negosiasi</h4><p>Komunikasi langsung sebelum konfirmasi tugas.</p></div>
+          <div class="feature"><h4>Invoice & Riwayat</h4><p>Catatan transaksi dan invoice tersimpan rapi.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how">
+      <div class="container">
+        <h2 class="reveal">Cara Kerja — 3 Langkah Mudah</h2>
+        <div class="steps reveal" style="margin-top:12px">
+          <div class="step"><h4>1. Daftar</h4><p>Buat akun sebagai pengguna atau penyedia.</p></div>
+          <div class="step"><h4>2. Hubungkan</h4><p>Cari atau tawarkan layanan; chat & konfirmasi.</p></div>
+          <div class="step"><h4>3. Selesai & Review</h4><p>Selesaikan layanan & bangun reputasi lewat ulasan.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section>
+      <div class="container">
+        <h2 class="reveal">Kategori Populer</h2>
+        <div class="cats reveal">
+          <div class="cat">🏠 Kebersihan</div>
+          <div class="cat">🔧 Teknisi</div>
+          <div class="cat">🎨 Desain</div>
+          <div class="cat">💄 Kecantikan</div>
+          <div class="cat">📚 Kursus</div>
+          <div class="cat">🎉 Event</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section>
+      <div class="container about">
+        <div>
+          <h2 class="reveal">Tentang JasaConnect</h2>
+          <p class="muted reveal">JasaConnect lahir dari ide sederhana: menghubungkan orang yang punya kebutuhan dengan orang yang punya keahlian. Kami percaya setiap pekerjaan — sekecil apapun — layak dikerjakan oleh orang yang tepat.</p>
+
+          <h3 class="reveal" style="margin-top:22px">Visi</h3>
+          <p class="muted reveal">Menjadi platform tepercaya yang memudahkan akses layanan berkualitas di seluruh Indonesia.</p>
+
+          <h3 class="reveal" style="margin-top:18px">Misi</h3>
+          <ul class="muted reveal">
+            <li>Menghubungkan pengguna dan penyedia jasa secara aman dan transparan.</li>
+            <li>Mendukung penyedia jasa untuk berkembang lewat reputasi dan peluang.</li>
+            <li>Menghadirkan pengalaman booking yang cepat dan mudah.</li>
+          </ul>
+
+          <div style="margin-top:18px" class="reveal">
+            <h4>Gabung berita & update</h4>
+            <form id="subscribeForm" class="subscribe" onsubmit="return handleSubscribe(event)">
+              <input id="emailInput" type="email" placeholder="Masukkan email kamu" required>
+              <button type="submit">Daftar</button>
+            </form>
+            <div id="subscribeMsg" style="margin-top:10px;color:var(--muted);font-size:13px;display:none"></div>
+          </div>
+        </div>
+
+        <aside class="card reveal">
+          <h4>Team & Nilai</h4>
+          <p class="muted">Kami tim kecil yang percaya pada dampak nyata layanan lokal. Semua anggota tim memimpin bersama — setara dan bertanggung jawab untuk membangun platform ini.</p>
+
+          <div class="team-grid" style="margin-top:12px">
+            <div class="team"><strong>Cresna One Putra</strong><div class="muted">Founder</div></div>
+            <div class="team"><strong>Dini Putriasmi Malinda</strong><div class="muted">Founder</div></div>
+            <div class="team"><strong>Randi Yansyah</strong><div class="muted">Founder</div></div>
+            <div class="team"><strong>Suliwa Ahwali Saymona</strong><div class="muted">Founder</div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Process/proyek snippet -->
+    <section>
+      <div class="container">
+        <h2 class="reveal">Proses Kerja yang Jelas</h2>
+        <p class="muted reveal">Setiap proyek melalui alur standar: briefing → proposal → konfirmasi → pelaksanaan → review. Ini membantu menjaga kualitas dan kepercayaan.</p>
+        <div class="reveal" style="margin-top:18px">
+          <div class="work" style="display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px;border:1px solid var(--card-border)">
+            <div class="thumb" style="width:120px;height:80px;border-radius:10px;display:flex;align-items:center;justify-content:center">PROSES</div>
+            <div class="meta"><strong>Briefing yang rinci</strong><div class="muted">Diskusikan kebutuhan & batas waktu dengan penyedia.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <h2 class="reveal">Pertanyaan yang Sering Muncul</h2>
+        <div class="faq reveal" style="margin-top:12px">
+          <details class="faq-item"><summary>Apa itu JasaConnect?</summary><p>JasaConnect adalah platform yang menghubungkan pengguna yang membutuhkan layanan dengan penyedia jasa terpercaya.</p></details>
+          <details class="faq-item"><summary>Bagaimana cara menjadi penyedia?</summary><p>Daftar, lengkapi profil, unggah portofolio, dan tunggu verifikasi. Setelah itu kamu bisa menerima permintaan.</p></details>
+          <details class="faq-item"><summary>Apakah aman melakukan transaksi di platform?</summary><p>Kami menyediakan sistem pembayaran yang tercatat dan verifikasi penyedia untuk meningkatkan keamanan transaksi.</p></details>
+          <details class="faq-item"><summary>Bagaimana jika jasa tidak sesuai?</summary><p>Ajukan komplain melalui menu bantuan; tim support akan membantu mediasi dan penyelesaian.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA big -->
+    <section id="join">
+      <div class="container">
+        <div class="cta-large reveal">
+          <div>
+            <h3>Mari Tumbuh Bersama di JasaConnect</h3>
+            <p class="muted">Baik kamu pengguna atau penyedia jasa — JasaConnect siap jadi partner. Bangun relasi dan peluang baru hari ini.</p>
+          </div>
+          <div style="display:flex;gap:12px">
+            <a class="btn-primary" href="https://your-jasaconnect-main-site.example" target="_blank" rel="noopener">Kunjungi Website Utama</a>
+            <a class="btn-ghost" href="#how">Pelajari Cara Kerja</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-top">
+        <div class="footer-col">
+          <div style="font-weight:800">JasaConnect</div>
+          <div style="margin-top:8px;color:var(--muted)">Partner dalam mewujudkan ide — menghubungkan pengguna & penyedia jasa terpercaya di seluruh Indonesia.</div>
+          <div style="margin-top:12px;color:var(--muted)">Email: hello@jasaconnect.example</div>
+        </div>
+
+        <div class="footer-col">
+          <div style="font-weight:700">Produk</div>
+          <div style="margin-top:8px"><a href="#how" class="muted">Cara Kerja</a></div>
+          <div style="margin-top:6px"><a href="#works" class="muted">Proyek</a></div>
+          <div style="margin-top:6px"><a href="#faq" class="muted">FAQ</a></div>
+        </div>
+
+        <div class="footer-col">
+          <div style="font-weight:700">Perusahaan</div>
+          <div style="margin-top:8px;color:var(--muted)">Tentang Kami</div>
+          <div style="margin-top:6px;color:var(--muted)">Karir</div>
+          <div style="margin-top:6px;color:var(--muted)">Blog</div>
+        </div>
+
+        <div class="footer-col">
+          <div style="font-weight:700">Ikuti Kami</div>
+          <div style="margin-top:8px;display:flex;gap:8px">
+            <a href="#" class="muted">Instagram</a>
+            <a href="#" class="muted">LinkedIn</a>
+            <a href="#" class="muted">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid var(--card-border);margin-top:20px;padding-top:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div style="color:var(--muted)">© 2025 JasaConnect. All rights reserved.</div>
+        <div style="color:var(--muted)">Syarat & Ketentuan • Kebijakan Privasi</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Simple theme toggle in header
+    const lightBtn = document.getElementById('lightBtn');
+    const darkBtn = document.getElementById('darkBtn');
+    const htmlEl = document.documentElement;
+    const floatLink = document.getElementById('floatLink');
+    const ctaJoin = document.getElementById('ctaJoin');
+
+    // Init theme from localStorage or prefer-color-scheme
+    function initTheme(){
+      const stored = localStorage.getItem('jc_theme');
+      if(stored === 'dark'){ htmlEl.classList.add('dark'); setActive(darkBtn); }
+      else if(stored === 'light'){ htmlEl.classList.remove('dark'); setActive(lightBtn); }
+      else {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if(prefersDark){ htmlEl.classList.add('dark'); setActive(darkBtn); }
+        else { htmlEl.classList.remove('dark'); setActive(lightBtn); }
+      }
+    }
+    function setActive(btn){
+      [lightBtn,darkBtn].forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    // Smooth theme transition (prevents instant flash)
+    let isTransitioning = false;
+    function smoothThemeSwitch(toDark){
+      if(isTransitioning) return;
+      isTransitioning = true;
+      // add small overlay transition if desired (not required)
+      htmlEl.style.transition = 'background ' + getComputedStyle(document.documentElement).getPropertyValue('--transition-theme');
+      htmlEl.classList.toggle('dark', toDark);
+      setTimeout(()=>{ isTransitioning = false; }, 700);
+    }
+
+    lightBtn.addEventListener('click', () => {
+      smoothThemeSwitch(false);
+      localStorage.setItem('jc_theme','light');
+      setActive(lightBtn);
+    });
+    darkBtn.addEventListener('click', () => {
+      smoothThemeSwitch(true);
+      localStorage.setItem('jc_theme','dark');
+      setActive(darkBtn);
+    });
+    initTheme();
+
+    // IntersectionObserver reveal with stagger
+    const revealNodes = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {root:null, rootMargin:'0px', threshold:0.12});
+    revealNodes.forEach((n,i)=> {
+      n.style.transitionDelay = (i * 45) + 'ms';
+      io.observe(n);
+    });
+
+    // Parallax subtle effect on hero visual
+    const heroParallax = document.querySelector('.hero-parallax');
+    window.addEventListener('scroll', () => {
+      const sc = window.scrollY;
+      if(heroParallax){
+        heroParallax.style.transform = `translateY(${sc * -0.03}px)`;
+      }
+    });
+
+    // Floating button mobile shorten
+    if(window.innerWidth < 520){
+      floatLink.textContent = '🔗 Website';
+    }
+    floatLink.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        window.open(this.href, '_blank');
+      }
+    });
+
+    // Subscribe form handler (simple show message)
+    function handleSubscribe(e){
+      e.preventDefault();
+      const emailInput = document.getElementById('emailInput');
+      const email = emailInput ? emailInput.value : '';
+      const msg = document.getElementById('subscribeMsg');
+      if(!email) return;
+      msg.style.display = 'block';
+      msg.style.color = 'green';
+      msg.textContent = 'Terima kasih! Email kamu sudah kami terima. Kami kabari saat JasaConnect live.';
+      if(emailInput) emailInput.value = '';
+      setTimeout(()=>{ msg.style.display='none'; }, 7000);
+      return false;
+    }
+
+    // header offset for anchor navigation
+    const headerHeight = document.querySelector('header').offsetHeight;
+    document.documentElement.style.scrollPaddingTop = (headerHeight + 8) + 'px';
+  </script>
+</body>
+</html>
